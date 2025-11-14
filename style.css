@@ -1,0 +1,190 @@
+*{
+  box-sizing: border-box;  
+}
+body{
+    background-color: rgb(253, 227, 147);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    grid-area: header;
+    font-size: 40px;
+    float:  right;
+    margin: 0px;
+    padding: 80px 100px;
+}
+h6{
+    font-size: 30px;
+    text-align: left;
+    color: grey;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-decoration: underline;
+}
+.ah{
+    background-color: rgb(254, 222, 95);
+}
+main{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "aside header"
+    "sidebar article"
+    "sidebar section"
+    "sidebar side"
+    "footer footer";
+}
+aside img{
+    margin-top: 70px;
+    margin-left: 100px;
+    grid-area: aside;
+    width: 400px;
+    height: auto; 
+}
+fieldset{
+    margin: 40px;
+    border-width: solid;
+    border-color: grey;
+    
+}
+ul{
+    font-size: 20px;
+}
+.b{
+    grid-area: sidebar;
+}
+p{
+    font-size: 20px;
+}
+legend{
+    text-align: center;
+    font-weight: bold;
+}
+ 
+.inform{
+    text-align: left;
+}
+.a{
+    list-style: square;
+}
+.c{
+    background:linear-gradient(to bottom,rgb(253, 227, 147),rgb(253, 227, 160)) ;
+}
+.o{
+    background:linear-gradient(to bottom,rgb(253, 227, 160),rgb(253, 227, 190)) ;
+}
+.l{
+    background:linear-gradient(to bottom,rgb(253, 227, 190),rgb(253, 227, 210)) ;
+}
+article{
+    padding-top: 30px;
+}
+.border{
+    border:black dashed 2px ;
+}
+
+.z{
+    margin: 3px;
+    width: 80px;
+    height: 20px;
+    border-left-style: solid;
+    border-left-color: rgb(226, 79, 17);
+}
+.java{
+    animation: bar1 2s ease-out;
+    border-left-width: 200px;
+}
+@keyframes bar1{
+    from{
+        border-left-width: 0px;
+    }
+    to{
+        border-left-width: 200px;
+    }
+}
+.java::after{
+    content: "80%";
+    display: inline;
+    color: rgb(95, 12, 240);
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    left: 5px;
+}
+.html{
+    animation: bar2 2s ease-out;
+    border-left-width: 120px;
+}
+@keyframes bar2{
+    from{
+        border-left-width: 0px;
+    }
+    to{
+        border-left-width: 120px;
+    }
+}
+.html::after{
+    content: "60%";
+    display: inline;
+    color: rgb(95, 12, 240);
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    left: 5px;
+}
+.py{
+    animation: bar3 2s ease-out;
+    border-left-width: 75px;
+}
+@keyframes bar3{
+    from{
+        border-left-width: 0px;
+    }
+    to{
+        border-left-width: 75px;
+    }
+}
+.py::after{
+    content: "40%";
+    display: inline;
+    color: rgb(95, 12, 240);
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    left: 5px;
+}
+.m{
+    grid-area: side;
+}
+.m img{
+    padding-left: 40px;
+    width: 40%;
+    height: auto;
+    transition-property: width height;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+}
+.m img:hover{
+    width: 70%;
+    height: auto;
+}
+div{
+    color: rgb(253, 227, 147);;
+}
+div:hover{
+    color: black;
+    font-size: 25px;
+}
+footer {
+    background-color: rgb(248, 207, 138);
+    font-size: 20px;
+    grid-area: footer;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 2px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
