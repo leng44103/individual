@@ -157,9 +157,13 @@ article{
 }
 .m{
     grid-area: side;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "div div"
+    "div div";
 }
 .m img{
-    padding-left: 40px;
     width: 40%;
     height: auto;
     transition-property: width height;
@@ -171,8 +175,7 @@ article{
     height: auto;
 }
 div{
-    text-align: right;
-    align-items: center;
+    text-align: center;
     color: rgb(253, 227, 147);;
 }
 div:hover{
