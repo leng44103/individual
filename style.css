@@ -167,11 +167,12 @@ article{
 	transition-timing-function: ease-out;
 }
 .m img:hover{
-    width: 70%;
+    width: 80%;
     height: auto;
 }
 div{
     text-align: right;
+    align-items: center;
     color: rgb(253, 227, 147);;
 }
 div:hover{
